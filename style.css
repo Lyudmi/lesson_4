@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,500,700|Raleway:400,500,700');
+/*
+Specify in CSS
+specify these families:
+
+    font-family: 'Montserrat', sans-serif;
+
+    font-family: 'Merriweather', serif;
+
+    font-family: 'Raleway', sans-serif;
+
+
+*/
+html,body {
+	height: 100%;
+	
+	
+}
+body {
+	margin: 0 auto;
+	
+			/*box-sizing: content-box;*/	
+}
+/*header*/
+.header-menu{
+	
+	height: 100%;
+
+}
+.container {
+
+	padding: 0 75px;
+}
+.main {
+	background: #eff0f2;
+	border-bottom: 1px solid #eff0f2;
+}
+.m_width {
+	max-width: 1440px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+
+.header-menu .logo{
+	/*font-size: 0;*/
+	display: inline-block;
+	margin: 0;
+	padding-top: 63px;
+	
+}
+.header-menu .logo>img{
+	border: 6px solid black;
+    padding: 9px;
+}
+.header-menu .logo:hover img{
+	border: 6px solid #aae7e3;
+    transition: border 0.2s ease-out;
+    cursor: pointer;
+}
+.nav_icon{
+	width: 30px;
+	height: 22px;
+	position: relative;
+	display: inline-block;
+	float: right;
+	top: 78px;
+	
+	
+}
+.nav_icon span{
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: black;
+  border-radius: 4px;
+  right: 0;
+
+}
+.nav_icon span:nth-child(1) {
+  top: 0px;
+}
+
+.nav_icon span:nth-child(2) {
+  top: 9px;
+}
+
+.nav_icon span:nth-child(3) {
+  top: 18px;
+}
+.nav_icon:hover{
+  cursor: pointer;
+}
+.nav_icon:hover span:nth-child(1){
+  	transform: skewY(30deg);
+  	top: 9px;
+	transition: transform 0.4s ease-out;
+}
+.nav_icon:hover span:nth-child(3){
+  	transform: skewY(-30deg);
+  	top: 9px;
+	transition: transform 0.4s ease-out;
+}
+.nav_icon:hover span:nth-child(2){
+  display: none;
+}
+
+/*header caption*/
+.main_caption{
+	text-align: center;
+	padding-top: calc(206px - 15px);
+	margin: 0px;
+
+}
+.main_caption h1{
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(80, 80, 80, 255);
+	font-size: 45px;
+	text-shadow:  2px 6px 3px rgba(80, 80, 250, 0.2);
+	text-transform: uppercase;
+	padding-top:0;
+	font-weight: 800;
+	line-height:  1.2;
+	letter-spacing: 0.9px;
+	margin: 0;
+	padding: 0;
+	
+}
+.m_width h1 span{
+	
+	background: #aae7e3;
+	padding: 0 10px;
+}
+
+.m_width .contact {
+	text-align: center;
+	padding: 150px ;
+	display:block;
+    position:relative;
+}
+.m_width .contact a{
+	display: inline-block;
+	padding: 10px 48px;
+	border: 2px solid #777879;
+	border-radius: 3px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #606061;
+	line-height:  1.6;
+	letter-spacing: 1.5px;
+	
+	font-family: 'Montserrat', sans-serif;
+}
+.contact a:hover {
+	border: 2px solid #aae7e3;
+	color: #aae7e3;
+    transition: border 0.2s ease-out;
+}
+
+.main_caption img {
+    transform: translate(0px, 265px) scale(0.9);
+    margin-left: -86px;
+}
+/*about list*/
+.about{
+	background: #f8fafa;
+	text-align: center;
+}
+.about_page{
+	max-width: 1440px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.about_page h2, .about_page h3, .feature_chapter h2, .feature_chapter h3, .services_chapter h2, .services_chapter h3{
+	margin: 0;
+	padding: 0;
+}
+.modal{
+	padding-top: 127px;
+	padding-bottom: 145px;
+}
+.modal h2{
+	color: #323333;
+	font-size: 28px;
+	line-height: 38px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+	line-height:  1.6;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+.modal h3{
+	font-weight: 500;
+	line-height: 38px;
+    color: #848585;
+    text-transform: uppercase;
+}
+.img-about img{ 
+ 	width: 100%; 
+ 	max-width: 400px; 
+ 	box-shadow: 0 0 5px 1px silver, -80px 0px 0px -38px #ecedef, 80px 0 0 -38px #ecedef;
+}
+.cont-left {
+	display: inline-block;
+	width: calc(50% - 57px);
+	padding-left:  38px;
+}
+.cont-right {
+	display: inline-block;
+	width: calc(50% - 192px);
+	padding-right:  38px;
+	padding-left: 113px;
+	vertical-align: top;
+}
+.cont-right h3{
+	font-family: 'Merriweather', serif;
+	color: #646565;
+	font-weight: 600;
+	line-height: 28px;
+	text-transform: uppercase;
+
+}
+.cont-right p{
+	font-family: 'Raleway', sans-serif;
+	color: #646565;
+	line-height: 16px;
+	letter-spacing: 1.5px;
+
+}
+.slider {
+	padding-top: 40px;
+    padding-bottom: 113px;
+}
+
+/*featured*/
+.featured{
+	background: #ffffff;
+	text-align: center;
+}
+.featured_page{
+	max-width: 1440px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.img_wrap img{
+	with: 100%;
+	max-width: 360px;
+	
+	height:100%;
+	min-height:360px;
+	max-height:360px;
+	background-size: contain;
+	margin-bottom: 12px;
+	
+}
+
+.img_wrap img:nth-child(2n){
+	padding: 0 12px;
+}
+
+.feature_chapter{
+	padding-bottom: 120px;
+}
+.img_wrap{
+	padding-bottom: 112px;
+}
+/*list services*/
+.services{
+	background: #f9fbfb;
+	text-align: center;
+}
+.services_page{
+	max-width: 1440px;
+	/*width: 100%;*/
+	margin: 0 auto;
+}
+.services_chapter{
+	padding-bottom: 123px;
+	padding-top: 124px;
+}
+.services ul{
+	margin: 0;
+	padding: 0;
+	width: 1440px; 
+	display: flex;
+}
+.services li{
+	list-style: none;
+}
+.services ul li .img_1{
+	width: 652px;
+	height: 422px;
+	box-sizing: border-box;
+	background-size: contain;
+	padding-bottom: 0 10px;
+	padding-left: 10px;
+}
+.services ul li .img_2{
+	width: 474px;
+	height: 422px;
+	box-sizing: border-box;
+	background-size: contain;
+	padding-bottom: 0 10px;
+	padding-left: 10px;
+}
+
+.services ul li .img_1 figure, .services ul li .img_2 figure{
+	position: relative;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+		
+.services ul li .img_1 figure .works_img_1{
+	width: 652px;
+	height: 422px;
+}
+
+.services ul li .img_2 figure .works_img_2{
+	width: 474px;
+	height: 422px;
+}
+.services ul li .img_1 figure  figcaption, .services ul li .img_2 figure  figcaption{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	background: #71f5ea;
+	text-align: justify;;
+	padding: 63px 116px 56px 66px;
+	opacity: 0;
+	transition: 0.5s;
+	transform: translateX(20px);
+	
+}
+.services ul li .img_1 figure  figcaption h2, .services ul li .img_2 figure  figcaption h2{
+	
+	font-family: 'Merriweather', serif;
+	font-weight: 700;
+	font-size: 20px;
+}
+.services ul li .img_1 figure  figcaption h2{
+	opacity: 0.8;
+}
+ .services ul li .img_2 figure  figcaption h2{
+	
+	color: #ffffff;
+	padding-top: 100px;
+}
+.services ul li .img_1 figure  figcaption p, .services ul li .img_2 figure  figcaption p{
+	
+	font-family: 'Raleway', sans-serif;
+	
+	font-size: 16px;
+}
+.services ul li .img_1 figure  figcaption p{
+	color: rgba(0, 0, 0, 255);
+	opacity: 0.6;
+	padding-bottom: 70px;
+	padding-top: 28px;
+}
+ .services ul li .img_2 figure  figcaption p{
+	
+	color: white;
+}
+.services ul li .img_2 figure  figcaption p a{
+	
+	color: white;
+	font-size: 18px;
+	text-decoration: none;
+}
+.services ul li .img_2 figure  figcaption{
+	
+	background: black;
+	
+}
+.services ul li .img_1:hover figure  figcaption, .services ul li .img_2:hover figure  figcaption{
+	opacity: 1;
+	transform: translateX(0);
+	cursor: pointer;
+}
+.services ul li .img_2:hover figure  figcaption{
+	opacity: 0.7;
+	
+}
+	
+/**/
+footer{
+	padding: 0 75px;
+}
